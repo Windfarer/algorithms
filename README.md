@@ -1,5 +1,5 @@
 # algs4 practice
-[website]http://algs4.cs.princeton.edu/home/
+official website http://algs4.cs.princeton.edu/home/
 
 
 ## how to import stdlib
