@@ -28,7 +28,7 @@ public class ResizingCapacityStack<Item> implements Iterable<Item> {
         if (N>0 && N == a.length/4) resize(a.length/2);
         return item;
     }
-      public Iterator<Item> iterator(){ 
+    public Iterator<Item> iterator(){ 
         return new ReverseArrayIterator(); 
     }
       
@@ -38,7 +38,7 @@ public class ResizingCapacityStack<Item> implements Iterable<Item> {
             return i > 0;
         }
         public Item next() {
-            return a[--i];
+            return a[--i]; //reverse
         }
         public void remove() {}
     }
