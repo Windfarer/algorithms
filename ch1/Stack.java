@@ -27,6 +27,9 @@ public class Stack<Item> { //not implement iterate
         N--;
         return item;
     }
+    public Item peak() {
+        return first.item;
+    }
     public static void main(String[] args) {
         Stack<String> s;
         s = new Stack<String>();

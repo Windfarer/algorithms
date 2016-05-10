@@ -21,6 +21,9 @@ public class FixedCapacityStackOfStrings
     public String pop() {
         return a[--N];
     }
+    public boolean isFull() {
+        return N == a.length;
+    }
 
     public static void main(String[] args) {
         FixedCapacityStackOfStrings s;
