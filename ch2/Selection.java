@@ -10,8 +10,8 @@ public class Selection {
                 if (less(a[j], a[min])) {
                     min = j;
                 }
-                exch(a, i, min);
             }
+            exch(a, i, min);
         }
     }
     private static boolean less(Comparable v, Comparable w) {
@@ -29,7 +29,7 @@ public class Selection {
         StdOut.println();
     }
     private static boolean isSorted(Comparable[] a) {
-        for (int i = 1; i <a.length; i++) {
+        for (int i = 1; i < a.length; i++) {
             if (less(a[i], a[i-1])) {
                 return false;
             }
@@ -37,7 +37,7 @@ public class Selection {
         return true;
     }
     public static void main(String[] args) {
-         String[] a = StdIn.readStrings();
+         String[] a = StdIn.readAllStrings();
          sort(a);
          assert isSorted(a);
          show(a);
